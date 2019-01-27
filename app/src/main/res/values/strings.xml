@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">keepFit</string>
+    <string name="keepFit">KeepFit</string>
+    <string name="kullaniciAdi">Kullanıcı Adı</string>
+    <string name="parola">Parola</string>
+    <string name="girisYap">GİRİŞ YAP</string>
+    <string name="title_activity_kayit_ol">kayitOl</string>
+    <string name="title_activity_ana_sayfa">AnaSayfa</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="open">Aç</string>
+    <string name="close">Kapat</string>
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Lütfen geçerli bir kullanıcı adı giriniz!</string>
+    <string name="error_message_email">Geçerli bir e-mail giriniz !</string>
+    <string name="error_empty">Bu alan boş geçilemez !</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Kayıt Başarılı</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">E-mail kullanılıyor !</string>
+    <string name="error_password_match">Parolalar eşleşmiyor !</string>
+    <string name="error_valid_email_password">Kullanıcı adı veya şifre hatalı !</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">Android Tutorials Hub</string>
+
+
+</resources>

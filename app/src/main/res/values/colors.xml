@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="keepfit">#380813</color>
+    <color name="splash">#380813</color>
+    <color name="transparent">#00000000</color>
+    <color name="Sarı">#FFFFBB33</color>
+    <color name="bg_gradient_start">#00e271</color>
+    <color name="bg_gradient_end">#00bc51</color>
+    <color name="bg_button_login">#380813</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

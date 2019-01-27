@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/keepfit"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textColor="@color/Sarı"
+        android:gravity="center"
+        android:text="KeepFit"
+        android:textStyle="bold"
+        android:textSize="75dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+       />
+</LinearLayout>

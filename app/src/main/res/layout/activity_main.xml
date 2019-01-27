@@ -1,0 +1,99 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consrraintMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anasayfa"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.MainActivity"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/cherry_cream_soda"
+            android:text="KeepFit"
+            android:textSize="75dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/keepfit"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@drawable/bg_form_rounded"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/kullaniciadi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="Kullanıcı Adı"
+                android:inputType="text|textNoSuggestions"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/parola"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Parola"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/girisYap"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_rounded"
+            android:baselineAligned="false"
+            android:elevation="0dp"
+            android:text="Giriş Yap"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/kayitOl"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="Kayıt Ol"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
