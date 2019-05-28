@@ -24,6 +24,10 @@
             android:id="@+id/ayarlar"
             android:icon="@drawable/ic_menu_manage"
             android:title="Ayarlar" />
+        <item
+            android:id="@+id/cikisYap"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="Çıkış" />
     </group>
 
 

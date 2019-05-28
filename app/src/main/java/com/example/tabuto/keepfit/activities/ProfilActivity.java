@@ -22,8 +22,7 @@ import android.widget.Toast;
 
 import com.example.tabuto.keepfit.Adaptor.UsersRecyclerAdapter;
 import com.example.tabuto.keepfit.R;
-import com.example.tabuto.keepfit.SQLite.DatabaseHelper;
-import com.example.tabuto.keepfit.SQLite.InputValidation;
+
 import com.example.tabuto.keepfit.model.User;
 
 import java.util.List;
@@ -33,7 +32,7 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
     private RecyclerView recyclerViewUsers;
     private List<User> listUsers;
     private UsersRecyclerAdapter usersRecyclerAdapter;
-    private DatabaseHelper databaseHelper;
+
     private User user;
 
     public AppCompatTextView tvName;
@@ -69,17 +68,16 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
                 ProfilActivity.this.finish();
             }
         });
-        SharedPreferences pref = getSharedPreferences("MyPref",0);
+       // SharedPreferences pref = getSharedPreferences("MyPref",0);
         initViews();
-        DatabaseHelper dh = new DatabaseHelper(getApplicationContext());
-        User user = dh.getUserInfo(pref.getString("username", null)); // getting Strin);
 
-        tvEmail.setText(user.getEmail());
+
+     /*  tvEmail.setText(user.getEmail());
         tvName.setText(user.getName());
         tvCinsiyet.setText(user.getGender());
         tvYas.setText(Integer.toString(user.getYas()));
         tvBoy.setText(Double.toString(user.getBoy()));
-        tvKilo.setText(Double.toString(user.getKilo()));
+        tvKilo.setText(Double.toString(user.getKilo()));*/
     }
 
 

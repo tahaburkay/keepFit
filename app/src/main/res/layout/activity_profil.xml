@@ -5,7 +5,7 @@
     android:id="@+id/constraintKayit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/anasayfa"
+    android:background="@drawable/anasayfa1"
     tools:context=".activities.ProfilActivity">
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -217,7 +217,7 @@
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/bg_button_rounded"
+            android:background="@color/splash"
             android:baselineAligned="false"
             android:elevation="0dp"
             android:text="Profil Güncelle"

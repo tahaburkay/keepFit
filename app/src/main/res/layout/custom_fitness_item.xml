@@ -20,16 +20,16 @@
         android:layout_toRightOf="@id/itemFitnessAvatar"
         android:layout_marginLeft="20dp"
         android:paddingTop="10dp"/>
+
     <TextView
         android:id="@+id/itemFitnessDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+        android:layout_below="@+id/itemFitnessTitle"
+        android:layout_alignStart="@id/itemFitnessTitle"
         android:layout_toRightOf="@id/itemFitnessAvatar"
         android:paddingTop="15dp"
-        android:layout_alignStart="@id/itemFitnessTitle"
-        android:layout_below="@+id/itemFitnessTitle"
-        />
+        android:text="Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+        android:textSize="16sp" />
 
 </RelativeLayout>

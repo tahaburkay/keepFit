@@ -30,7 +30,20 @@ public class FragmentFitness extends android.support.v4.app.Fragment {
         textView = (TextView) view.findViewById(R.id.textView);
 
          String[] titles = {"Bacak","Omuz","Göğüs","Sırt","Kol"};
-         String[] desc = {"Bacak çalış","Omuz çalış","Göğüs çalış","Sırt çalış","Kol çalış"};
+         String[] desc = {"Leg Press : Makinenin sırt kısmını kendinize uygun açıya getirin. Göğüs kafesi büyük, göbek çevresi geniş ya da kalın bacaklara sahip olanlar olanlar sonuna kadar yatırabilirler. Bunun amacı, bacakları son noktaya kadar vücuda çekebilmek içindir.",
+
+                 "Decline Push-Up : Dizleriniz,kalçanız ve elleriniz de omuz hizasında olacak şekilde dört ayak pozisyonu alın." +
+                         " Daha sonra ayaklarınızı bir sandalye veya yüksek bir şey üzerine kaldırın ve vücudunuzu kol gücünüzden destek alarak yukarı aşağı hareket ettirin." +
+                         " Gövdenizin bir hizada olması gerektiğini unutmayın.",
+
+                 "Diamond Push-Up : Ayaklarınızı birleştirerek şınav posizyonu alın.Elleriniz de omuz hizasında olacak şekilde dört ayak pozisyonu alın." +
+                 " İşaret ve baş parmaklarınızı bir araya getirip göğsünüzün altında bir elmas işareti oluşturun.Daha sonra vücudunuzu yukarı aşağı hareket ettirin.",
+
+                 /*"Bird Dog : Dizlerinizi kırarak dört ayak üstünde durun ve elleriniz omuzlarınızın altında, dizlerinizse kalçanın alt hizasında olsun." +
+                 " Bu pozisyondayken sol kolu ileriye ve sağ bacağı da geriye doğru olacak şekilde aynı anda yukarı kaldırın ve uzanabildiğiniz kadar ileri uzanmaya çalışın." +*/
+                 " Kol ve bacağınızı eski yerine koyduktan sonra bu sefer de sağ kolunuz ve sol bacağınızı aynı anda kaldırın.",
+
+                 "Plank : Şınav çeker pozisyonda dümdüz durun, kollarınız omuz genişliğini geçmeyecek şekilde açık ve elleriniz de omuzlarınızın tam altında olsun."};
          int[] images = {R.drawable.leg,R.drawable.shoulder,R.drawable.chest,R.drawable.back,R.drawable.arm};
          ListView listView = view.findViewById(R.id.lvFitness);
          FitnessCategory category;

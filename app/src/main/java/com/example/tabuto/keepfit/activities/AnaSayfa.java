@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.tabuto.keepfit.SQLite.DatabaseHelper;
+
 import com.example.tabuto.keepfit.fragments.FragmentAntrenman;
 import com.example.tabuto.keepfit.fragments.FragmentBeslenme;
 import com.example.tabuto.keepfit.fragments.FragmentFitness;
@@ -98,7 +98,7 @@ public class AnaSayfa extends AppCompatActivity implements NavigationView .OnNav
                     return true;
                 case R.id.grafik:
                 case R.id.talimatlar:
-                case R.id.ayarlar:
+                case R.id.cikisYap:
                     intent = new Intent(AnaSayfa.this, MainActivity.class);
                     finish();
                     startActivity(intent);

@@ -14,9 +14,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.example.tabuto.keepfit.SQLite.InputValidation;
+
 import com.example.tabuto.keepfit.R;
-import com.example.tabuto.keepfit.SQLite.DatabaseHelper;
+
 import com.example.tabuto.keepfit.model.User;
 
 
@@ -41,18 +41,18 @@ public class kayitOl extends Activity implements View.OnClickListener {
     private Button buttonKayitOl;
     private AppCompatTextView appCompatTextViewLoginLink;
 
-    private InputValidation inputValidation;
-    private DatabaseHelper databaseHelper;
+
     private User user;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kayit_ol);
 
 
         Button kayitOl=(Button)findViewById(R.id.kayitOlundu);
         Button geri = (Button)findViewById(R.id.geri);
-
+        kayitOl.setOnClickListener(this);
+        geri.setOnClickListener(this);
 
 
         /*kayitOl.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ public class kayitOl extends Activity implements View.OnClickListener {
 
         /*
 */
-        geri.setOnClickListener(new View.OnClickListener() {
+        /*geri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(kayitOl.this,MainActivity.class  );
@@ -77,11 +77,11 @@ public class kayitOl extends Activity implements View.OnClickListener {
                 overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
                 kayitOl.this.finish();
             }
-        });
+        });*/
 
         initViews();
         initListeners();
-        initObjects();
+
           value = ((RadioButton)findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
         radioGroupGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -118,12 +118,7 @@ public class kayitOl extends Activity implements View.OnClickListener {
     /**
      * This method is to initialize objects to be used
      */
-    private void initObjects() {
-        inputValidation = new InputValidation(activity);
-        databaseHelper = new DatabaseHelper(activity);
-        user = new User();
 
-    }
 
 
     @Override
@@ -131,56 +126,17 @@ public class kayitOl extends Activity implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.kayitOlundu:
-                postDataToSQLite();
                 break;
 
             case R.id.geri:
-                finish();
+                Intent intent = new Intent(kayitOl.this,MainActivity.class  );
+                kayitOl.this.startActivity(intent);
+                overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
+                kayitOl.this.finish();
                 break;
         }
     }
-    private void postDataToSQLite() {
 
-        if (!inputValidation.isInputEditTextEmail(editTextEmail, linearLayout, getString(R.string.error_message_email))
-                || !inputValidation.isInputEditTextFilled(editTextEmail, linearLayout, getString(R.string.error_empty))) {
-            return;
-        }
-
-        if (!inputValidation.isInputEditTextFilled(editTextName, linearLayout, getString(R.string.error_empty))) {
-            return;
-        }
-
-        if (!inputValidation.isInputEditTextMatches(editTextPassword, editTextConfirmPassword,
-                linearLayout, getString(R.string.error_password_match))) {
-            return;
-        }
-
-        if (!databaseHelper.checkUser(editTextEmail.getText().toString().trim())) {
-
-            user.setName(editTextName.getText().toString().trim());
-            user.setEmail(editTextEmail.getText().toString().trim());
-            user.setGender(value);
-            user.setYas(Integer.parseInt(editTextAge.getText().toString().trim()));
-            user.setBoy(Double.parseDouble(editTextHeight.getText().toString().trim()));
-            user.setKilo(Double.parseDouble(editTextWeight.getText().toString().trim()));
-            user.setPassword(editTextPassword.getText().toString().trim());
-
-            databaseHelper.addUser(user);
-
-           Snackbar.make(findViewById(R.id.constraintKayit), getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
-
-            emptyInputEditText();
-            /*Intent intentRegister = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intentRegister);*/
-
-
-        } else {
-            // Snack Bar to show error message that record already exists
-           Snackbar.make(findViewById(R.id.constraintKayit), getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
-        }
-
-
-    }
     private void emptyInputEditText() {
         editTextName.setText(null);
         editTextEmail.setText(null);

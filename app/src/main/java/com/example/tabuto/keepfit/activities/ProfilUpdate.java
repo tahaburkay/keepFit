@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.tabuto.keepfit.R;
-import com.example.tabuto.keepfit.SQLite.DatabaseHelper;
 import com.example.tabuto.keepfit.model.User;
 
 
@@ -25,7 +24,7 @@ public class ProfilUpdate extends AppCompatActivity implements View.OnClickListe
     public EditText etKilo;
     public EditText etParola;
     private User user;
-    private DatabaseHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +63,7 @@ public class ProfilUpdate extends AppCompatActivity implements View.OnClickListe
 
     }
     public void update(){
-        DatabaseHelper dh = new DatabaseHelper(getApplicationContext());
+
         User user = new User();
         user.setName(etName.getText().toString().trim());
 
@@ -72,7 +71,7 @@ public class ProfilUpdate extends AppCompatActivity implements View.OnClickListe
         user.setBoy(Double.parseDouble(etBoy.getText().toString().trim()));
         user.setKilo(Double.parseDouble(etKilo.getText().toString().trim()));
         user.setPassword(etParola.getText().toString().trim());
-        dh.updateUser(user,getApplicationContext());
+
     }
 
     /**
