@@ -9,7 +9,7 @@
         android:layout_height="139dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Fragmen Antrenman"
+        android:text="Fragment Antrenman"
         android:textAlignment="center"
         android:textSize="50dp" />
 </LinearLayout>

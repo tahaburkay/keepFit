@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +16,7 @@ import android.widget.Toast;
 
 import com.example.tabuto.keepfit.R;
 
-import com.example.tabuto.keepfit.model.User;
+import com.example.tabuto.keepfit.model.UserModel;
 
 
 public class kayitOl extends Activity implements View.OnClickListener {
@@ -42,7 +41,7 @@ public class kayitOl extends Activity implements View.OnClickListener {
     private AppCompatTextView appCompatTextViewLoginLink;
 
 
-    private User user;
+    private UserModel user;
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);

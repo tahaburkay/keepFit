@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tvCNTitle"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Baslik"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvNTitle"
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="Yumurta"
+        android:layout_alignTop="@+id/tvCNTitle"
+        android:layout_toRightOf="@+id/tvCNTitle"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tvCNTitle"
+        android:id="@+id/tvCNCalory"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Kalori"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvNCalory"
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="300"
+        android:layout_alignTop="@+id/tvCNCalory"
+        android:layout_toRightOf="@+id/tvCNCalory"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tvCNCalory"
+        android:id="@+id/tvCNMeal"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ogun"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvNMeal"
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="Ogun Adi"
+        android:layout_alignTop="@+id/tvCNMeal"
+        android:layout_toRightOf="@+id/tvCNMeal"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

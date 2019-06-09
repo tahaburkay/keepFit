@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.tabuto.keepfit.R;
-import com.example.tabuto.keepfit.model.User;
+import com.example.tabuto.keepfit.model.UserModel;
 import java.util.List;
 
 public class UsersRecyclerAdapter extends RecyclerView.Adapter<UsersRecyclerAdapter.UserViewHolder> {
 
-    private List<User> listUsers;
+    private List<UserModel> listUsers;
 
-    public UsersRecyclerAdapter(List<User> listUsers) {
+    public UsersRecyclerAdapter(List<UserModel> listUsers) {
         this.listUsers = listUsers;
     }
 

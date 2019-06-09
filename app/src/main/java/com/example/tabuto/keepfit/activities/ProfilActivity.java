@@ -1,39 +1,27 @@
 package com.example.tabuto.keepfit.activities;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.AsyncTask;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.tabuto.keepfit.Adaptor.UsersRecyclerAdapter;
 import com.example.tabuto.keepfit.R;
 
-import com.example.tabuto.keepfit.model.User;
+import com.example.tabuto.keepfit.model.UserModel;
 
 import java.util.List;
 
 public class ProfilActivity extends AppCompatActivity implements View.OnClickListener{
     private AppCompatActivity activity = ProfilActivity.this;
     private RecyclerView recyclerViewUsers;
-    private List<User> listUsers;
+    private List<UserModel> listUsers;
     private UsersRecyclerAdapter usersRecyclerAdapter;
 
-    private User user;
+    private UserModel user;
 
     public AppCompatTextView tvName;
     public AppCompatTextView tvEmail;

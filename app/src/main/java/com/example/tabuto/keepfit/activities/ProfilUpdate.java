@@ -1,20 +1,15 @@
 package com.example.tabuto.keepfit.activities;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
-import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatTextView;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.example.tabuto.keepfit.R;
-import com.example.tabuto.keepfit.model.User;
+import com.example.tabuto.keepfit.model.UserModel;
 
 
 public class ProfilUpdate extends AppCompatActivity implements View.OnClickListener {
@@ -23,7 +18,7 @@ public class ProfilUpdate extends AppCompatActivity implements View.OnClickListe
     public EditText etBoy;
     public EditText etKilo;
     public EditText etParola;
-    private User user;
+    private UserModel user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +59,7 @@ public class ProfilUpdate extends AppCompatActivity implements View.OnClickListe
     }
     public void update(){
 
-        User user = new User();
+        UserModel user = new UserModel();
         user.setName(etName.getText().toString().trim());
 
         user.setYas(Integer.parseInt(etYas.getText().toString().trim()));

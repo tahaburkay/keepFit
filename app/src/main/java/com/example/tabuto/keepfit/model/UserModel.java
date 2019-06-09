@@ -1,6 +1,6 @@
 package com.example.tabuto.keepfit.model;
 
-public class User {
+public class UserModel {
 
     private int id;
     private String email;

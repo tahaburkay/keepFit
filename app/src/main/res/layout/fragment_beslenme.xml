@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="139dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="Fragmen Beslenme"
-        android:textAlignment="center"
-        android:textSize="50dp" />
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listBeslenme"
-        >
-
-    </ListView>
+    android:layout_height="match_parent"
+    android:padding="8dp">
+   <ListView
+       android:id="@+id/nutrionList"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></ListView>
 </LinearLayout>
